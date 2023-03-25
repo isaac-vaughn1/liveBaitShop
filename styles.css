@@ -1,0 +1,65 @@
+* {
+    margin:0%;
+    padding:0%;
+}
+
+body {
+    background-color: #fbfcf8;
+}
+
+header {
+    padding-top: 30px;
+    text-align: center;
+    border: 2px solid;
+    position: sticky;
+    top: 0;
+    background-color: #fbfcf8;
+}
+
+.title {
+    font-size: 3em;
+}
+
+nav {
+    display:inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a {
+    padding: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin: auto;
+}
+
+.fishing{
+    padding-top: 1%;
+    margin-right: 5%;
+    margin-left:5%;
+    width: 90%;
+    height: auto;
+    position:relative;
+}
+
+.imgText {
+    position:relative;
+}
+
+#text {
+    position:absolute;
+    text-align: center;
+    top:12%;
+    right:55%;
+    font-variant: small-caps;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
