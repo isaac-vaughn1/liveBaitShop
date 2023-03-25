@@ -5,32 +5,59 @@
 
 body {
     background-color: #fbfcf8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     padding-top: 30px;
     text-align: center;
-    border: 2px solid;
+    border-bottom: 1px solid;
     position: sticky;
     top: 0;
-    background-color: #fbfcf8;
+    background-color: #4e554e;
+    z-index: 100;
+}
+
+.mainTitle {
+    font-size: 3em;
+    text-align: center;
+    color: #fbfcf8;
+    font-variant: small-caps;
 }
 
 .title {
     font-size: 3em;
+    text-align: center;
+    color: #4e554e;
+    font-variant: small-caps;
+}
+
+.subTitle {
+    color:#4e554e;
+    text-align: center;
+}
+
+.bass {
+    color:#4e554e;
+    width: 8%;
+    height:auto;
+    padding-top: 10px;
 }
 
 nav {
     display:inline-block;
     padding-top: 5px;
     padding-bottom: 5px;
+    color: white;
 }
 
 a {
     padding: 15px;
     padding-left: 15px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover {
@@ -62,4 +89,112 @@ a:hover {
     font-variant: small-caps;
     color: white;
     text-shadow: 2px 2px 5px black;
+}
+
+footer {
+    background-color: #6c796c;
+    border-top: 1px solid;
+    text-align: center;
+    color:#fbfcf8;
+    padding: 15px;
+    margin-top:auto;
+}
+
+.signUp {
+    padding: 10px;
+}
+
+.textBox {
+    background-color: rgb(245, 245, 235);
+    width: 15%;
+    padding:2px;
+    border-color:#4e554e;
+}
+
+.button {
+    background-color: lightgrey;
+    padding:2px;
+    border-radius: 5px;
+    border-color: lightgrey;
+}
+
+.lureService {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.baitServe1, .baitServe2, .baitServe3 {
+    width: 50%;
+    height:auto;
+    border-radius:15%;
+    padding: 5px;
+}
+
+/*table & extra baits.html styles*/
+
+table{
+    margin:auto;
+    opacity: 95%;
+    position: relative;
+}
+
+td, th{
+    text-align: center;
+    border: 1px solid;
+}
+
+table, td, th {
+    padding: 15px;
+    color:#4e554e;
+}
+
+tr:nth-child(even){
+    background-color: rgb(245, 245, 235);
+}
+
+tr:nth-child(odd){
+    background-color: white;
+}
+
+.tablePicRight {
+    position:absolute;
+    width: 25%;
+    height:auto;
+    border-radius: 25%;
+    top: 30%;
+    right:5%;
+}
+
+.tablePicLeft {
+    position:absolute;
+    width: 25%;
+    height:auto;
+    top: 25%;
+    left:5%;
+}
+
+@media screen and (max-width: 932px)
+{
+    #text{
+        display:none;
+    }
+    .baitServe1, .baitServe3, .tablePicLeft, .tablePicRight{
+        display:none;
+    }
+
+    .baitServe2{
+        width:30%;
+    }
+}
+
+@media screen and (min-width: 932px)
+{
+    .baitServe1, .baitServe2, .baitServe3{
+        display:inline-block;
+        width: 25%;
+    }
+
+    #text{
+        display:block;
+    }
 }

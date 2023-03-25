@@ -6,34 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Home | Howard's Bait and Tackle</title>
+    <title>Home | Howard's Bait & Tackle</title>
 </head>
 
 <body>
     <!--Title and Navigation-->
     <header>
-        <h1 class="title">Howard's Bait and Tackle</h1>
+        <h1 class="mainTitle">Howard's Bait and Tackle</h1>
         <nav>
             <a href="index.html">Home</a> &bull;
-            <a href="baits.html">Baits & Tackle</a> &bull;
-            <a href="services.html">Other Services</a>
+            <a href="baits.html" target="_blank">Baits & Tackle</a> &bull;
+            <a href="services.html" target="_blank">Other Services</a>
         </nav>
     </header>
 
-    <!--Main Content-->
     <div class="container">
         <div class="imgText">
             <img class="fishing" src="fishing.png" alt="fishing while bathed in the setting sun">
-                <div id="text">
-                    <p>Ready to fish?</p>
-                    <h1>Welcome to Howard's Bait and Tackle</h1>
-                    <p>Feel Free to View Everything we have to offer</p>
-                </div>
+            <div id="text">
+                <p>Ready to fish?</p>
+                <h1>Welcome to Howard's Bait and Tackle</h1>
+                <p>Feel Free to View Everything we have to offer</p>
+            </div>
         </div>
 
+        <!--Main Content-->
         <div class="main">
-            
+            <div class="subTitle">
+                <img class="bass" src="bass.png" alt="a bass jumping">
+                <h1 class="title">Baits & Tackle</h1>
+                <p>Come Check Out Our Live Bait & Tackle</p>
+            </div>
+
+            <div class="lureService">
+                <img class="baitServe1" src="blueLure.jpg" alt="fishing lure">
+                <img class="baitServe2" src="orangeLure.png" alt="fishing lure">
+                <img class="baitServe3" src="blackLure.png" alt="fishing lure">
+            </div>
+
+            <div class="subTitle">
+                <img class="bass" src="bass.png" alt="a bass jumping">
+                <h1 class="title">Other Services</h1>
+                <p>We Also Offer Respooling, Snacks, and Boat Cleans</p>
+            </div>
+
+            <div class="lureService">
+                <img class="baitServe1" src="respool.jpg" alt="fishing reel">
+                <img class="baitServe2" src="snacks.jpg" alt="snack aisle">
+                <img class="baitServe3" src="cleaning.jpg" alt="boat hull getting scrubbed">
+            </div>
+
         </div><!--End of Main-->
+
+        <footer>
+            <h2 class="signUp">SIGN UP FOR EXCLUSIVE DEALS</h2>
+
+            <form action="thanks.html" method="get" target="_blank">
+                <input class="textBox" type="text" name="userEmail" id="email" placeholder="Enter Your Email">
+                <input class="button" type="submit" value="Subscribe">
+            </form>
+
+            <p class="signUp">&copy; Howard's Bait and Tackle LLC</p>
+        </footer>
     </div><!--End of Container-->
 </body>
 
